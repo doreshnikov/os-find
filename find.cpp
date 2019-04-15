@@ -228,7 +228,7 @@ namespace service {
                 throw files::access_exception("Specified path '" + console::_HELP + file_path + console::_ERROR +
                     "' does not exist");
             }
-            std::vector<char *> args{c_cast(_epath), c_cast(file_path)};
+            std::vector<char *> args{c_cast(_epath), c_cast(file_path), nullptr};
 
             pid_t pid = fork();
             if (pid == -1) {
