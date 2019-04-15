@@ -343,7 +343,7 @@ int main(int argc, char *argv[]) {
             if (arg[0] != '-') {
                 return console::report("Unexpected token '" + arg + "', " + console::REPORT_HELP);
             }
-            if (arg == "-silent") {
+            if (arg == "--silent") {
                 visitor.set_silent(true);
                 continue;
             }
