@@ -32,7 +32,7 @@ namespace console {
                         "\t- SIZE is a size of the file (- for Lesser, = for Equal, + for Greater)\n"
                         "\t- NLINKS is a number of " + _BOLD + "hardlinks" + _DEFAULT + "\n"
                         "\t- EPATH is an absolute path to the file that should be executed on each found entity\n"
-                        "\t- --silent is a flag indicating that found files should not be printed to the output";
+                        "\t- --silent is a flag indicating that found files should not be printed to the output\n";
     // @formatter:on
 
     int report(std::string const &message, int err = 0) {
