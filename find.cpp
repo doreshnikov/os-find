@@ -26,13 +26,13 @@ namespace console {
     std::string USAGE = "find utility v.1.0.0\n"
                         "Help:  ./find -help\n"
                         "Usage: ./find PATH [-inum INUM] [-name NAME] [-size (-|=|+)SIZE] [-nlinks NLINKS] [-exec EPATH] [--silent]\n"
-                        "\t- PATH is an absolute path to the directory for searching\n"
-                        "\t- INUM is a number of " + _BOLD + "inode" + _DEFAULT + "\n"
-                        "\t- NAME is a name of the file\n"
-                        "\t- SIZE is a size of the file (- for Lesser, = for Equal, + for Greater)\n"
-                        "\t- NLINKS is a number of " + _BOLD + "hardlinks" + _DEFAULT + "\n"
-                        "\t- EPATH is an absolute path to the file that should be executed on each found entity\n"
-                        "\t- --silent is a flag indicating that found files should not be printed to the output\n";
+                        "\t: PATH is an absolute path to the directory for searching\n"
+                        "\t: INUM is a number of " + _BOLD + "inode" + _DEFAULT + "\n"
+                        "\t: NAME is a name of the file\n"
+                        "\t: SIZE is a size of the file (- for Lesser, = for Equal, + for Greater)\n"
+                        "\t: NLINKS is a number of " + _BOLD + "hardlinks" + _DEFAULT + "\n"
+                        "\t: EPATH is an absolute path to the file that should be executed on each found entity\n"
+                        "\t--silent is a flag indicating that found files should not be printed to the output\n";
     // @formatter:on
 
     int report(std::string const &message, int err = 0) {
